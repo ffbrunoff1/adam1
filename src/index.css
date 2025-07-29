@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  body {
+    @apply bg-background text-primary font-sans;
+  }
+}
+
+@layer utilities {
+  .gradient-text {
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-accent-start to-accent-end;
+  }
+  .gradient-button {
+    @apply bg-gradient-to-r from-accent-start to-accent-end text-white;
+  }
+  .section-padding {
+    @apply px-6 py-20 md:px-12 md:py-28;
+  }
+}
